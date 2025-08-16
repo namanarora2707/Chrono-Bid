@@ -1,6 +1,7 @@
 Chrono-Bid is a mini real-time auction platform designed to simulate a competitive bidding environment. It allows sellers to create auctions, buyers to place bids dynamically, and ensures transparency through real-time updates and notifications.
 
 Features
+
 🔹 1. Create and View Auctions
 
 Sellers can create new auctions by entering all essential details:
