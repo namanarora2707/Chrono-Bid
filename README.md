@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+Chrono-Bid is a mini real-time auction platform designed to simulate a competitive bidding environment. It allows sellers to create auctions, buyers to place bids dynamically, and ensures transparency through real-time updates and notifications.
 
-## Project info
+Features
+🔹 1. Create and View Auctions
 
-**URL**: https://lovable.dev/projects/13958b7a-a020-4af1-8ee5-4485c15c5c65
+Sellers can create new auctions by entering all essential details:
+Item name and description
+Desired starting price
+Minimum bid increment
+Go-live date & time
+Auction duration
+Buyers can browse upcoming and live auctions in a clean interface.
 
-## How can I edit this code?
+🔹 2. Real-Time Bidding
 
-There are several ways of editing your application.
+Buyers can place bids instantly using WebSockets.
+No need to refresh the page — bids are updated live.
+Ensures a fast, engaging, and competitive auction experience.
 
-**Use Lovable**
+🔹 3. Live Highest Bid Display
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13958b7a-a020-4af1-8ee5-4485c15c5c65) and start prompting.
+The current highest bid is always visible to all participants.
+Creates transparency and keeps all buyers informed about their chances of winning.
 
-Changes made via Lovable will be committed automatically to this repo.
+🔹 4. Real-Time Notifications
 
-**Use your preferred IDE**
+Seller Notifications: Immediately informed whenever a new bid is placed.
+Bidder Notifications:
+Notified if their bid has been outbid.
+Receive updates about auction status changes.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔹 5. Post-Auction Bid Management
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The seller can:
+Accept the highest bid and close the deal.
+Reject the bid if not satisfied.
 
-Follow these steps:
+🔹 6. Counter-Offer System (Bonus Feature)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Instead of only accepting/rejecting, sellers can make a counter-offer to the highest bidder.
+The bidder then has the option to accept or reject this counter-offer.
+If rejected, both parties are notified accordingly.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🔹 7. Buyer Bid Acceptance Notification
 
-# Step 3: Install the necessary dependencies.
-npm i
+Buyers are clearly notified once their bid (or counter-offer) is accepted by the seller.
+Ensures smooth communication and avoids confusion.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🔹 8. Email Confirmations
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/13958b7a-a020-4af1-8ee5-4485c15c5c65) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+After a successful auction, confirmation emails are automatically sent to both the buyer and seller.
+Provides a permanent record of the transaction.
